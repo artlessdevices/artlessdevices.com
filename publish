@@ -1,0 +1,2 @@
+#!/bin/sh
+rsync  --archive --compress --force --delete --progress --exclude '.git' --exclude publish . kyle@artlessdevices.com:/var/www/artlessdevices.com/
