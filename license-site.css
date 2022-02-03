@@ -9,10 +9,18 @@ body > header,
 body > nav,
 body > main,
 body > footer {
-  margin: 2rem auto;
-  max-width: 30rem;
   padding: 0 1rem;
   text-align: left;
+}
+
+@media screen {
+  body > header,
+  body > nav,
+  body > main,
+  body > footer {
+    margin: 2rem auto;
+    max-width: 30rem;
+  }
 }
 
 body > header {
@@ -162,12 +170,6 @@ body > header {
 body > header > h1 {
   margin: 0;
   padding: 0;
-}
-
-body > header,
-body > main,
-body > footer {
-  max-width: 30rem;
 }
 
 body > footer {
