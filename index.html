@@ -16,9 +16,13 @@
     <style>
 :root {
   color-scheme: light dark;
+  --black-or-white: black;
 }
 
 @media(prefers-color-scheme: dark) {
+  :root {
+    --black-or-white: white;
+  }
   img {
     filter: invert(1);
   }
@@ -40,8 +44,8 @@ main {
 
 dl {
   margin-top: 1rem;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid var(--black-or-white);
+  border-bottom: 1px solid var(--black-or-white);
   padding-top: 1rem;
   padding-bottom: 2rem;
   text-transform: none;
@@ -58,7 +62,7 @@ dd {
 
 a {
   border-bottom: 1px dashed #999;
-  color: black;
+  color: var(--black-or-white);
   text-decoration: none;
 }
     </style>
